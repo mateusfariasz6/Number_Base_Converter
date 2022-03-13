@@ -6,26 +6,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="indexPageStyle.css" media="screen" />
-    <title>Aula</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet"> 
+    
+    <title>Conversor de bases numéricas</title>
 </head>
 
 <body>
-    <header class="headerPage">
-        <h1 class="title">Conversão de números</h1>
-    </header>
-    <section class="Conversor">
-        <form class="Form" method="POST">
-            <h2 class="title_form">Converter Decimal para Binário</h2>
-            <div class="input_Number">
-                <input type="number" name="numeroNaBaseDez">
-            </div>
-            <div class="button_Send">
-                <button type="submit">Converter para Binário</button>
-            </div>
-        </form>
-    </section>
+    <?php 
+        require('Views/header/header.php');
+        require('Views/nav/nav.php');
+        require('Components/CompDecBin.php')
+    ?>
+    
+    
+    
+    
     <?php
-        $numDecimal = $_POST['numeroNaBaseDez'];
+       $numDecimal = $_POST['numeroNaBaseDez'];
         $i = 0;
         $numDecimal = intval($numDecimal);
         
@@ -54,8 +53,9 @@
 
 
 
-    <section class="Resposta">
-    </section>
+    <?php
+        require('Views/footer/footer.php');
+    ?>
 </body>
 
 </html>

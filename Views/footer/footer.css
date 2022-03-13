@@ -1,0 +1,25 @@
+.footerPage{
+    background-color: #ced3d9;
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.titlefooter{
+    font-family: Open Sans;
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.Links .link img{
+    width: 30px;
+    height: 30px;
+    margin-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
