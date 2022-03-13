@@ -1,0 +1,1 @@
+This is a simple numerical base conversion project, which is serving to put into practice what I've been learning about HTML, CSS and PHP.
